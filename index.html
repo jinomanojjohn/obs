@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,6 +64,35 @@
         .my-float {
             margin-top: 16px;
         }
+
+        .ser_par {
+            font-size: medium;
+        }
+
+        .abt {
+            font-size: medium;
+        }
+
+        .con {
+            font-size: 15px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .abt {
+                font-size: larger;
+            }
+            .con{
+                font-size: larger;
+            }
+
+        }
+
+        @media (max-width: 575.98px) {
+            .ser_par {
+                padding: 10px 0px;
+                font-size: small;
+            }
+        }
     </style>
 </head>
 
@@ -83,12 +110,13 @@
             </div> <br class="d-sm-none">
             <div class="col-6 px-lg-5">
                 <i class="bi bi-geo-alt-fill px-2"></i> <a class="text-white text-decoration-none"
-                    href="https://goo.gl/maps/peDmWr6Ff9xXgKGh9" target="_blank">AM Rd, Nalam Mile, Erumathala P.O., Aluva, Kerala-683112</a>
+                    href="https://goo.gl/maps/peDmWr6Ff9xXgKGh9" target="_blank">AM Rd, Nalam Mile, Erumathala P.O.,
+                    Aluva, Kerala-683112</a>
             </div>
         </div>
     </div>
     <div class="bg-danger bg-gradient">
-        <marquee behavior="scroll" direction="left" class="fw-bold fs-5 text-white pt-2" scrollamount="10">
+        <marquee behavior="scroll" direction="left" class="fw-bold fs-6 text-white pt-2" scrollamount="10">
             Car , Bike , Inverter and all types of Battery Sales and Service including Battery Charging and Battery
             Water.
         </marquee>
@@ -132,7 +160,8 @@
                         <i class="bi bi-telephone-fill me-2"></i>
                         Call Now
                     </a>
-                    <a href="https://goo.gl/maps/peDmWr6Ff9xXgKGh9" target="_blank" class="btn btn-outline-dark rounded-end-pill me-4 p-2">
+                    <a href="https://goo.gl/maps/peDmWr6Ff9xXgKGh9" target="_blank"
+                        class="btn btn-outline-dark rounded-end-pill me-4 p-2">
                         Get Directions
                         <i class="bi bi-geo-alt-fill"></i>
                     </a>
@@ -183,7 +212,7 @@
                             <img src="./assets/img/battery1.png" class="card-img-top" alt="...">
 
                             <div class="card-footer text-center">
-                                <small class="text-dark fs-4 fw-medium">Car Batteries</small>
+                                <h6 class="text-dark fs-6 fw-medium">Car Batteries</h6>
                             </div>
                         </div>
                     </div>
@@ -192,7 +221,7 @@
                             <img src="./assets/img/battery2.png" class="card-img-top" alt="...">
 
                             <div class="card-footer text-center">
-                                <small class="text-dark fs-4 fw-medium">Bike Batteries</small>
+                                <small class="text-dark fs-6 fw-medium">Bike Batteries</small>
                             </div>
                         </div>
                     </div>
@@ -201,7 +230,7 @@
                             <img src="./assets/img/battery3.png" class="card-img-top" alt="...">
 
                             <div class="card-footer text-center">
-                                <small class="text-dark fs-4 fw-medium">Inverter Batteries</small>
+                                <small class="text-dark fs-6 fw-medium">Inverter Batteries</small>
                             </div>
                         </div>
                     </div>
@@ -210,7 +239,7 @@
                             <img src="./assets/img/battery4.png" class="card-img-top" alt="...">
 
                             <div class="card-footer text-center">
-                                <small class="text-dark fs-4 fw-medium">Battery Water</small>
+                                <small class="text-dark fs-6 fw-medium">Battery Water</small>
                             </div>
                         </div>
                     </div>
@@ -223,14 +252,14 @@
     <div class="container-fluid">
         <h2 class="text-center fw-bold pt-5">Battery Brands</h2>
         <div class="m-3 px-3">
-            <div class="row d-flex">
-                <div class="col-4">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-4 ">
+                <div class="col">
                     <img src="./assets/img/exide.png" class="img-fluid pt-3" alt="" />
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <img src="./assets/img/amaron.png" class="img-fluid rounded-4 p-2" alt="" />
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <img src="./assets/img/sf.jpg" class="img-fluid p-3" alt="" />
                 </div>
                 <!-- <div class="col-3">
@@ -253,9 +282,10 @@
                                 <img src="./assets/img/service1.png" class="card-img-top rounded-4" alt="...">
                             </div>
                             <div class="card-footer text-center">
-                                <small class="text-white fs-5 fw-medium">Battery Charging</small>
-                                <p class="text-white fs-7 fw-light">We provide battery charging service for all types of
-                                    batteries.</p>
+                                <small class="text-white fs-6 fw-bold">Battery Charging</small><br>
+                                <h7 class="text-white fw-light ser_par">We provide battery charging service for all
+                                    types of
+                                    batteries.</h7>
                             </div>
                         </div>
                     </div>
@@ -265,9 +295,10 @@
                                 <img src="./assets/img/battery4.png" class="card-img-top rounded-4" alt="...">
                             </div>
                             <div class="card-footer text-center">
-                                <small class="text-white fs-4 fw-medium">Battery Water</small>
-                                <p class="text-white fs-6 fw-light">We provide battery water for all types of batteries.
-                                </p>
+                                <small class="text-white fs-6 fw-bold">Battery Water</small><br>
+                                <h7 class="text-white fw-light ser_par">We provide battery water for all types of
+                                    batteries.
+                                </h7>
                             </div>
                         </div>
                     </div>
@@ -277,9 +308,10 @@
                                 <img src="./assets/img/service3.png" class="card-img-top rounded-4" alt="...">
                             </div>
                             <div class="card-footer text-center">
-                                <small class="text-white fs-4 fw-medium">Battery Sales</small>
-                                <p class="text-white fs-6 fw-light">We provide battery sales for all types of batteries.
-                                </p>
+                                <small class="text-white fs-6 fw-bold">Battery Sales</small><br>
+                                <h7 class="text-white fw-light ser_par">We provide battery sales for all types of
+                                    batteries.
+                                </h7>
                             </div>
                         </div>
                     </div>
@@ -289,9 +321,9 @@
                                 <img src="./assets/img/service4.png" class="card-img-top rounded-4" alt="...">
                             </div>
                             <div class="card-footer text-center">
-                                <small class="text-white fs-4 fw-medium">Battery Service</small>
-                                <p class="text-white fs-6 fw-light">We provide battery service for all types of
-                                    batteries.</p>
+                                <small class="text-white fs-6 fw-bold">Battery Service</small><br>
+                                <h7 class="text-white fw-light ser_par">We provide battery service for all types of
+                                    batteries.</h7>
                             </div>
                         </div>
                     </div>
@@ -310,12 +342,13 @@
                     <img src="./assets/img/carousel2.png" class="img-fluid d-block h-100" alt="...">
                 </div>
                 <div class="col-lg-6 col-sm-12 p-0 text-dark">
-                    <h2 class="text-right fw-bold ps-3 ps-xl-5 pe-0 pt-4 pb-2">About Us</h2>
-                    <p class="text-right ps-xl-5 ps-3 fs-5">Olickal Battery Shop is a battery shop located in
+                    <h3 class="text-right fw-bold ps-3 ps-xl-5 pe-0 pt-4 pb-2">About Us</h3>
+                    <p class="text-right ps-xl-5 ps-3 fs-7 abt">Olickal Battery Shop is a battery shop located in
                         Erumathala, Aluva.
                         We provide all types of batteries for cars, bikes, inverters and other purposes. We also provide
                         battery charging and battery water.</p>
-                    <p class="text-right ps-xl-5 ps-3 fs-5">We also do <strong>Home Delivery</strong> of batteries and
+                    <p class="text-right ps-xl-5 ps-3 fs-7 abt">We also do <strong>Home Delivery</strong> of batteries
+                        and
                         breakdown
                         service within 10km radius.</p>
                 </div>
@@ -328,17 +361,19 @@
         <div class="container-fluid">
             <h2 class="text-center fw-bold p-5">Contact</h2>
             <div class="row m-2 border border-5 rounded-5 border-dark">
-                <div class="col-md-6 bg-dark text-white p-5 pb-0 rounded-4 align-items-center">
+                <div class="col-md-6 bg-dark text-white p-5 pt-2 pt-xl-5 pb-0 rounded-4 align-items-center">
                     <h3 class="font-weight-bold pt-3">Contact Information</h3>
                     <br>
-                    <p class="text-left px-2 pb-2 fs-6"><strong class="">Phone:</strong> <a
+                    <p class="text-left px-2 pb-2 con"><strong class="">Phone:</strong> <a
                             class="text-white fw-normal text-decoration-none" href="tel:+918590787011">
                             (+91) 8590787011</a></p>
-                    <p class="text-left px-2 py-2 fs-6"><strong class="">Email:</strong> <a
+                    <p class="text-left px-2 py-2 con"><strong class="">Email:</strong> <a
                             class="text-white fw-normal text-decoration-none" href="mailto:manojjohn0210@gmail.com">
                             manojjohn0210@gmail.com</a> </p>
-                    <p class="text-left px-2  py-2 fs-6"><strong class="">Address:</strong><a
-                            class="text-white fw-normal text-decoration-none" href="https://goo.gl/maps/peDmWr6Ff9xXgKGh9"> AM Rd, Nalam Mile, Erumathala P.O., Aluva, Kerala-683112</a> </p>
+                    <p class="text-left px-2  py-2 con"><strong class="">Address:</strong><a
+                            class="text-white fw-normal text-decoration-none"
+                            href="https://goo.gl/maps/peDmWr6Ff9xXgKGh9"> AM Rd, Nalam Mile, Erumathala P.O., Aluva,
+                            Kerala-683112</a> </p>
                 </div>
                 <div class="col-md-6 p-xl-5 p-2">
                     <h3 class="fw-bold text-center">Contact Form</h3>
