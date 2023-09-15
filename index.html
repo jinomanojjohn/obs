@@ -51,13 +51,13 @@
 
         .float_up {
             width: 60px;
-            height: 60px;
+            height: 65px;
             background-color: black;
             color: #FFF;
-            border-radius: 50px;
+            border-color: black;
+            border-radius: 70px;
             text-align: center;
             font-size: 43px;
-            box-shadow: 2px 2px 3px #999;
             z-index: 99;
         }
 
@@ -77,20 +77,41 @@
             font-size: 15px;
         }
 
+        .font_sm {
+            font-size: small;
+        }
+
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+
         @media screen and (min-width: 768px) {
             .abt {
                 font-size: larger;
             }
-            .con{
-                font-size: larger;
+
+            .con {
+                font-size: 17px;
+                padding-top: 20px;
             }
 
         }
 
+        @media screen and (min-width: 992px) {
+
+            .con {
+                font-size: 22px;
+            }
+        }
+
         @media (max-width: 575.98px) {
             .ser_par {
-                padding: 10px 0px;
-                font-size: small;
+                padding: 2px 0px;
+                font-size: x-small;
             }
         }
     </style>
@@ -99,24 +120,31 @@
 <body>
 
 
-    <div id="nav_top" class="bg-dark text-white py-3 px-4 d-none d-lg-block d-xl-block fs-7">
-        <div class=" row d-lg-flex justify-content-between">
-            <div class="col-3 px-lg-5"> <i class="bi bi-telephone-fill px-2"></i> <a
+    <div id="nav_top" class="container-fluid bg-dark text-white py-2 px-2 d-none d-lg-block fs-7">
+        <div class="row d-flex jusity-content-center mx-0">
+            <div class="col px-lg-2 fs-7"> <i class="bi bi-telephone-fill px-1"></i> <a
                     class="text-white text-decoration-none " href="tel:+918590787011">(+91) 8590787011</a>
-            </div> <br class="d-sm-none">
-            <div class="col-3 px-lg-5">
-                <i class="bi bi-envelope-fill px-2"></i> <a class="text-white text-decoration-none"
+            </div>
+            <div class="col px-lg-1 fs-7">
+                <i class="bi bi-envelope-fill"></i> <a class="text-white text-decoration-none"
                     href="mailto:manojjohn0210@gmail.com">manojjohn0210@gmail.com</a>
-            </div> <br class="d-sm-none">
-            <div class="col-6 px-lg-5">
-                <i class="bi bi-geo-alt-fill px-2"></i> <a class="text-white text-decoration-none"
+            </div>
+            <div class="col ps-lg-3 fs-7 me-0">
+                <i class="bi bi-geo-alt-fill px-0"></i> <a class="text-white text-decoration-none"
                     href="https://goo.gl/maps/peDmWr6Ff9xXgKGh9" target="_blank">AM Rd, Nalam Mile, Erumathala P.O.,
                     Aluva, Kerala-683112</a>
             </div>
         </div>
     </div>
-    <div class="bg-danger bg-gradient">
-        <marquee behavior="scroll" direction="left" class="fw-bold fs-6 text-white pt-2" scrollamount="10">
+    <div class="bg-danger bg-gradient d-none d-lg-block">
+        <marquee behavior="scroll" direction="left" class="fw-normal fs-6 text-white pt-2" scrollamount="10">
+            Car , Bike , Inverter and all types of Battery Sales and Service including Battery Charging and Battery
+            Water.
+        </marquee>
+    </div>
+
+    <div class="bg-danger bg-gradient d-lg-none font_sm">
+        <marquee behavior="scroll" direction="left" class="fw-normal fs-7 text-white pt-1" scrollamount="10">
             Car , Bike , Inverter and all types of Battery Sales and Service including Battery Charging and Battery
             Water.
         </marquee>
@@ -125,43 +153,55 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler border-0 fs-1" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                aria-label="Toggle navigation" data-bs-focus="">
+                <i class="bi bi-three-dots-vertical"></i>
+                <!-- <span class="navbar-toggler-icon"></span> -->
             </button>
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/1.svg" height="40px" alt="Olickal Battery Shop">
             </a>
+            <a href="tel:+918590787011" class="btn btn-sm btn-outline-dark fw-bold rounded-pill py-2 d-lg-none font_sm">
+                <i class="bi bi-telephone-fill me-2"></i>
+                Call Now
+            </a>
+
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="col-xl-3 col-lg-1  d-none d-lg-block d-xl-block">
 
                 </div>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- <li class="nav-item px-3">
-                        <a class="nav-link text-dark fw-bold" href="#home">Home</a>
-                    </li> -->
                     <li class="nav-item px-3">
-                        <a class="nav-link text-dark fw-bold" href="#category">Categories</a>
+                        <a class="nav-link focus-ring text-dark fw-medium rounded-5"
+                            style="--bs-focus-ring-x: 2px; --bs-focus-ring-y: 2px; --bs-focus-ring-blur: 6px; --bs-focus-ring-color:grey"
+                            href="#category">Categories</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link text-dark fw-bold" href="#services">Services</a>
+                        <a class="nav-link focus-ring text-dark fw-medium rounded-5"
+                            style="--bs-focus-ring-x: 2px; --bs-focus-ring-y: 2px; --bs-focus-ring-blur: 6px; --bs-focus-ring-color:grey"
+                            href="#services">Services</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link text-dark fw-bold" href="#about">About</a>
+                        <a class="nav-link focus-ring text-dark fw-medium rounded-5"
+                            style="--bs-focus-ring-x: 2px; --bs-focus-ring-y: 2px; --bs-focus-ring-blur: 6px; --bs-focus-ring-color:grey"
+                            href="#about">About</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link text-dark fw-bold" href="#contact">Contact</a>
+                        <a class="nav-link focus-ring text-dark fw-medium rounded-5"
+                            style="--bs-focus-ring-x: 2px; --bs-focus-ring-y: 2px; --bs-focus-ring-blur: 6px; --bs-focus-ring-color:grey"
+                            href="#contact">Contact</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <a href="tel:+918590787011" class="btn btn-dark rounded-start-pill me-0 p-2 ps-3">
+                <div class="d-flex d-none d-lg-block">
+                    <a href="tel:+918590787011"
+                        class="btn btn-sm btn-dark bg-gradient rounded-start-pill me-0 p-2 ps-3">
                         <i class="bi bi-telephone-fill me-2"></i>
                         Call Now
                     </a>
                     <a href="https://goo.gl/maps/peDmWr6Ff9xXgKGh9" target="_blank"
-                        class="btn btn-outline-dark rounded-end-pill me-4 p-2">
+                        class="btn btn-sm btn-outline-dark rounded-end-pill me-3  p-2">
                         Get Directions
                         <i class="bi bi-geo-alt-fill"></i>
                     </a>
@@ -209,7 +249,7 @@
                 <div class="row row-cols-2 row-cols-md-4 row-cols-xl-4 g-4 px-5 py-4">
                     <div class="col">
                         <div class="h-100" data-aos="fade-left">
-                            <img src="./assets/img/battery1.png" class="card-img-top" alt="...">
+                            <img src="./assets/img/battery1.webp" class="card-img-top" alt="...">
 
                             <div class="card-footer text-center">
                                 <h6 class="text-dark fs-6 fw-medium">Car Batteries</h6>
@@ -218,7 +258,7 @@
                     </div>
                     <div class="col">
                         <div class="h-100" data-aos="fade-left" data-aos-duration="2500">
-                            <img src="./assets/img/battery2.png" class="card-img-top" alt="...">
+                            <img src="./assets/img/battery2.webp" class="card-img-top" alt="...">
 
                             <div class="card-footer text-center">
                                 <small class="text-dark fs-6 fw-medium">Bike Batteries</small>
@@ -227,7 +267,7 @@
                     </div>
                     <div class="col">
                         <div class="h-100" data-aos="fade-right" data-aos-duration="2500">
-                            <img src="./assets/img/battery3.png" class="card-img-top" alt="...">
+                            <img src="./assets/img/battery3.webp" class="card-img-top" alt="...">
 
                             <div class="card-footer text-center">
                                 <small class="text-dark fs-6 fw-medium">Inverter Batteries</small>
@@ -236,7 +276,7 @@
                     </div>
                     <div class="col">
                         <div class="h-100" data-aos="fade-right" data-aos-duration="2500">
-                            <img src="./assets/img/battery4.png" class="card-img-top" alt="...">
+                            <img src="./assets/img/battery4.webp" class="card-img-top" alt="...">
 
                             <div class="card-footer text-center">
                                 <small class="text-dark fs-6 fw-medium">Battery Water</small>
@@ -251,8 +291,8 @@
     <!-- Battery Brands -->
     <div class="container-fluid">
         <h2 class="text-center fw-bold pt-5">Battery Brands</h2>
-        <div class="m-3 px-3">
-            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-4 ">
+        <div class="m-3 px-5">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-4 px-md-3 px-4">
                 <div class="col">
                     <img src="./assets/img/exide.png" class="img-fluid pt-3" alt="" />
                 </div>
@@ -274,7 +314,7 @@
         <!-- Services -->
         <section id="services" class="bg-dark bg-gradien4 text-white py-5">
             <div class="container-fluid">
-                <h2 class="text-center fs-1 fw-medium">Services</h2>
+                <h2 class="text-center fs-1 fw-bold">Services</h2>
                 <div class="row row-cols-2 row-cols-md-4 row-cols-xl-4 g-4 px-5 py-4">
                     <div class="col">
                         <div class="h-100" data-aos="flip-left" data-aos-duration="2000">
@@ -282,23 +322,22 @@
                                 <img src="./assets/img/service1.png" class="card-img-top rounded-4" alt="...">
                             </div>
                             <div class="card-footer text-center">
-                                <small class="text-white fs-6 fw-bold">Battery Charging</small><br>
-                                <h7 class="text-white fw-light ser_par">We provide battery charging service for all
-                                    types of
-                                    batteries.</h7>
+                                <small class="text-white fs-6 fw-medium">Battery Charging</small><br>
+                                <p class="text-white fw-lighter ser_par lh-3">We provide battery charging service for
+                                    all types of batteries.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="h-100" data-aos="flip-left" data-aos-duration="2000">
                             <div class="p-xl-5 p-2">
-                                <img src="./assets/img/battery4.png" class="card-img-top rounded-4" alt="...">
+                                <img src="./assets/img/battery4.webp" class="card-img-top rounded-4 bg-white" alt="...">
                             </div>
                             <div class="card-footer text-center">
-                                <small class="text-white fs-6 fw-bold">Battery Water</small><br>
-                                <h7 class="text-white fw-light ser_par">We provide battery water for all types of
+                                <small class="text-white fs-6 fw-medium">Battery Water</small><br>
+                                <p class="text-white fw-lighter ser_par lh-3">We provide battery water for all types of
                                     batteries.
-                                </h7>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -308,10 +347,10 @@
                                 <img src="./assets/img/service3.png" class="card-img-top rounded-4" alt="...">
                             </div>
                             <div class="card-footer text-center">
-                                <small class="text-white fs-6 fw-bold">Battery Sales</small><br>
-                                <h7 class="text-white fw-light ser_par">We provide battery sales for all types of
+                                <small class="text-white fs-6 fw-medium">Battery Sales</small><br>
+                                <p class="text-white fw-lighter ser_par lh-3">We provide battery sales for all types of
                                     batteries.
-                                </h7>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -322,8 +361,8 @@
                             </div>
                             <div class="card-footer text-center">
                                 <small class="text-white fs-6 fw-bold">Battery Service</small><br>
-                                <h7 class="text-white fw-light ser_par">We provide battery service for all types of
-                                    batteries.</h7>
+                                <p class="text-white fw-light ser_par lh-3">We provide battery service for all types of
+                                    batteries.</p>
                             </div>
                         </div>
                     </div>
@@ -361,8 +400,8 @@
         <div class="container-fluid">
             <h2 class="text-center fw-bold p-5">Contact</h2>
             <div class="row m-2 border border-5 rounded-5 border-dark">
-                <div class="col-md-6 bg-dark text-white p-5 pt-2 pt-xl-5 pb-0 rounded-4 align-items-center">
-                    <h3 class="font-weight-bold pt-3">Contact Information</h3>
+                <div class="col bg-dark text-white p-5 pt-2 pt-lg-5 pb-0 rounded-4  py-auto">
+                    <h3 class="font-weight-bold pt-3 pt-xl-5">Contact Information</h3>
                     <br>
                     <p class="text-left px-2 pb-2 con"><strong class="">Phone:</strong> <a
                             class="text-white fw-normal text-decoration-none" href="tel:+918590787011">
@@ -374,8 +413,9 @@
                             class="text-white fw-normal text-decoration-none"
                             href="https://goo.gl/maps/peDmWr6Ff9xXgKGh9"> AM Rd, Nalam Mile, Erumathala P.O., Aluva,
                             Kerala-683112</a> </p>
+                    <br>
                 </div>
-                <div class="col-md-6 p-xl-5 p-2">
+                <div class="col p-xl-5 p-2">
                     <h3 class="fw-bold text-center">Contact Form</h3>
                     <form autocomplete="off" class="p-2">
                         <div class="form-group my-2 my-xl-3">
@@ -443,7 +483,7 @@
     </a>
 
     <!-- Up Button -->
-    <button class="bttnn float_up rounded-circle position-fixed bottom-0 start-0 m-4 d-lg-none d-xl-none">
+    <button class="bttnn float_up rounded-circle position-fixed bottom-0 start-0 m-1 d-lg-none">
         <i class="bi bi-arrow-up-circle-fill"></i>
     </button>
 
@@ -454,8 +494,17 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-    <script>
+
+        const navLinks = document.querySelectorAll('.nav-item');
+        const menuToggle = document.getElementById('navbarSupportedContent');
+
+        navLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                if (menuToggle.classList.contains('show')) {
+                }
+            });
+        });
+
         function gotowhatsapp() {
 
             var name = document.getElementById("name").value;
@@ -505,7 +554,7 @@
                 window.scroll({
                     top: 0,
                     left: 0,
-                    behavior: 'smooth'
+                    behavior: "smooth"
                 });
                 // console.log(event);
             });
