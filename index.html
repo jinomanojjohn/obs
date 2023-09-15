@@ -501,6 +501,7 @@
         navLinks.forEach((link) => {
             link.addEventListener('click', () => {
                 if (menuToggle.classList.contains('show')) {
+                    menuToggle.classList.remove('show');
                 }
             });
         });
